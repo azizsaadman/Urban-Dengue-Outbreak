@@ -8,8 +8,8 @@ temperature, humidity and ward vulnerability, with a dashboard that shows the ma
 | Member | Role |
 |---|---|
 | Saadman Aziz (Team Leader) | data and ML pipeline |
-| Abdullah Al Tousif Habib | UI |
-| Aditya Dey | tests, video |
+| Abdullah Al Tousif Habib | UI design and web |
+| Aditya Dey | tests, doc preparation |
 
 ## Tech stack
 Python 3.10+, pandas, NumPy, scikit-learn utilities, LightGBM, joblib, Streamlit, Altair, pytest.
@@ -19,7 +19,7 @@ Python 3.10+, pandas, NumPy, scikit-learn utilities, LightGBM, joblib, Streamlit
 git clone <your-repo-url>
 cd dengue-early-warning
 python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+source .venv/bin/activate         
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -27,9 +27,9 @@ The trained models are already in `models/`, so the app starts immediately at ht
 
 Optional commands:
 ```bash
-python -m src.train       # retrain (about 20 s), rewrites models/ and metrics
-python -m src.benchmark   # measure latency, writes models/benchmark.json
-pytest -q                 # lag, leakage and tier tests
+python -m src.train       
+python -m src.benchmark   
+pytest -q                
 ```
 
 ## What is in the repo
